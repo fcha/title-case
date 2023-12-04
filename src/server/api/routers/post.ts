@@ -19,7 +19,7 @@ export const postRouter = createTRPCRouter({
     .input(z.object({ name: z.string().min(1) }))
     .mutation(async ({ input }) => {
 
-      var re = /(\b[a-z](?!\s))/g;
+      const re = /(\b[a-z](?!\s))/g;
       input.name = input.name.replace(re, function(x){return x.toUpperCase();});
 
       post = { name: input.name };
