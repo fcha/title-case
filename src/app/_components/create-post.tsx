@@ -28,7 +28,7 @@ export function CreatePost() {
 				placeholder="Text"
 				value={name}
 				onChange={(e) => setName(e.target.value)}
-				className="textarea textarea-info textarea-bordered textarea-lg w-full"
+				className="textarea text-pink-500 textarea-bordered textarea-lg w-full"
 		/>
 		</form>
 	);
